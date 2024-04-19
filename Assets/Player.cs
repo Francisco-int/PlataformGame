@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
 
     public float speed;
+    public float speedRotation;
     public float jumpForce;
     [SerializeField] bool jumpAble;
     [SerializeField] Rigidbody body;
@@ -23,20 +25,18 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        body.AddForce(new Vector3(horizontal, 0, vertical) * speed);
+        body.AddForce(transform.right * horizontal * speed + transform.forward * vertical * speed);
 
-        if(Input.GetKeyDown(KeyCode.Escape) && jumpAble)
+        if(Input.GetKeyDown(KeyCode.Space) && jumpAble)
         {
-            body.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
-        }
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Plataform"))
-        {
+            body.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             jumpAble = false;
         }
-        else
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Plataform"))
         {
             jumpAble = true;
         }
