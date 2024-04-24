@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    [InspectorName("Hola")]
+    [Range(0f, 10f)]
     public float speed;
     public float speedRotation;
     public float jumpForce;
+    [Header("Variable")]
     [SerializeField] bool jumpAble;
     [SerializeField] Rigidbody body;
 

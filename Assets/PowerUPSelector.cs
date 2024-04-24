@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum PowerUpType {none, Push, Velocity, SuperJump}
+
 public class PowerUPSelector : MonoBehaviour
 {
     public PowerUpType powerUpType;
