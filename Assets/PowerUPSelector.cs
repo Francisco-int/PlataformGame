@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class GameManager : MonoBehaviour
+public enum PowerUpType {none, Push, Velocity, SuperJump}
+public class PowerUPSelector : MonoBehaviour
 {
-    
+    public PowerUpType powerUpType;
 
     // Start is called before the first frame update
     void Start()
