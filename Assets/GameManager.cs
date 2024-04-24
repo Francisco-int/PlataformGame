@@ -2,16 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlataformsControls : MonoBehaviour
-{
-     void Update()
-    {
-        
-    }
-}
 
 public class GameManager : MonoBehaviour
 {
+    enum {explotion, jump
+
     // Start is called before the first frame update
     void Start()
     {
