@@ -54,7 +54,7 @@ public class PowerUps : MonoBehaviour
     }
      void SuperJump()
     {
-        player.jumpForce = 6;
+        player.jumpForce = 8;
     }
 
     private void OnTriggerEnter(Collider other)
