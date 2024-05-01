@@ -29,6 +29,10 @@ public class Enemy : MonoBehaviour
         {
             afterPlayer = true;
         }
+        else
+        {
+            afterPlayer = false;
+        }
     }
 
 }

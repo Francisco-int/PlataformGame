@@ -13,6 +13,9 @@ public class PowerUps : MonoBehaviour
     public float escalaTiempo;
     public GameObject jugador;
     public float estabilisador;
+    public float estabilisadorCamera;
+    public EyeCamera eyeCamera;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,7 @@ public class PowerUps : MonoBehaviour
         {
             Time.timeScale = 1;
             player.speed = 5.15f;
+            eyeCamera.speedRotate = 100;
         }
 
             if (Input.GetKey(KeyCode.E) && currentPowerUp == PowerUpType.SuperJump)
@@ -59,11 +63,12 @@ public class PowerUps : MonoBehaviour
     {
         Time.timeScale = escalaTiempo;
         player.speed = estabilisador;
+        eyeCamera.speedRotate = estabilisadorCamera;
     }
 
     void SuperJump()
     {
-        player.jumpForce = 8;
+        player.jumpForce = 13;
     }
 
     private void OnTriggerEnter(Collider other)

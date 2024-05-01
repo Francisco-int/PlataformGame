@@ -1,7 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; 
 
 public class Shotter : MonoBehaviour
 {
@@ -13,28 +12,49 @@ public class Shotter : MonoBehaviour
     public float balaForce;
     public float activated;
     public Transform player;
+
     // Start is called before the first frame update
     void Start()
     {
         shot = false;
+        shotCoolDown = Random.Range(0, 2);
         InvokeRepeating("Shot", shotCoolDown, shotCoolDown);
     }
 
     void Update()
     {
+
+
+
         if (player.position.x < activated)
         {
             shot = true;
         }
+        else
+        {
+            shot = false;
+        }
+      
+        if (player.position.x < -32.58)
+        {
+            shot = false;
+        }
+        if (shot)
+        {
+            for (int i = 0; i < Random.Range(5, 15); i++)
+            {
+                float time = Time.deltaTime;
+                if (time > Random.Range(0, 2))
+                {
+                    shotPoint.position = new Vector3(Random.Range(-32.58f, -7.5f), 3.1f, Random.Range(-5.6f, 8.8f));
+                    Instantiate(bala, shotPoint);
+                    time = 0;
+                }
+            }
+        }
     }
     void Shot()
     {
-        if (shot)
-        {
-            GameObject newBala = Instantiate(bala, shotPoint);
-            Rigidbody rb = newBala.GetComponent<Rigidbody>();
-            rb.AddForce(newBala.transform.forward * balaForce, ForceMode.Impulse);
-            Debug.Log("Shot");
-        }
+        
     }
 }
