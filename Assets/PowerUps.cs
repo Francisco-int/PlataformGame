@@ -2,31 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class PowerUps : MonoBehaviour
 {
     [Tooltip("")] public PowerUpType currentPowerUp = PowerUpType.none;
-     public Player player;
+    public Player player;
     public float pushForce;
+    public float speedPower;
+    public float escalaTiempo;
+    public GameObject jugador;
+    public float estabilisador;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.E) &&  currentPowerUp == PowerUpType.Velocity)
+        if (Input.GetKey(KeyCode.E) && currentPowerUp == PowerUpType.Velocity)
         {
             Velocity();
         }
         else
         {
-            player.speed = 5;
+            Time.timeScale = 1;
+            player.speed = 5.15f;
         }
-        if (Input.GetKey(KeyCode.E) && currentPowerUp == PowerUpType.SuperJump)
+
+            if (Input.GetKey(KeyCode.E) && currentPowerUp == PowerUpType.SuperJump)
         {
             SuperJump();
         }
@@ -40,7 +47,7 @@ public class PowerUps : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player") && currentPowerUp == PowerUpType.Push)
+        if (collision.gameObject.CompareTag("Enemy") && currentPowerUp == PowerUpType.Push)
         {
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
             Vector3 pushAway = (collision.gameObject.transform.position - transform.position);
@@ -50,9 +57,11 @@ public class PowerUps : MonoBehaviour
     }
     void Velocity()
     {
-        player.speed = 10;
+        Time.timeScale = escalaTiempo;
+        player.speed = estabilisador;
     }
-     void SuperJump()
+
+    void SuperJump()
     {
         player.jumpForce = 8;
     }
@@ -63,10 +72,5 @@ public class PowerUps : MonoBehaviour
         {
             currentPowerUp = other.gameObject.GetComponent<PowerUPSelector>().powerUpType;
         }
-    }
-    IEnumerator PowerUpCountDown()
-    {
-        yield return new WaitForSeconds(5);
-        currentPowerUp = PowerUpType.none;
     }
 }

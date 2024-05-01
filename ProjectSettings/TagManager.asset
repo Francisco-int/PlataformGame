@@ -7,6 +7,7 @@ TagManager:
   - Plataform
   - PowerUp
   - Enemy
+  - Bala
   layers:
   - Default
   - TransparentFX

@@ -7,8 +7,8 @@ public class Enemy : MonoBehaviour
 
     public Transform player;
     public float speed;
-    public Collider trigger;
     bool afterPlayer;
+    public float activated;
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +22,13 @@ public class Enemy : MonoBehaviour
     {
         if(afterPlayer == true)
         {
-            Vector3 follow = (player.position - transform.position);
-            transform.position = (follow * Time.deltaTime * speed);
+            Vector3 follow = player.position - transform.position;
+            transform.Translate(follow * Time.deltaTime * speed);
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+        if(player.position.x < activated)
         {
             afterPlayer = true;
         }
     }
+
 }
