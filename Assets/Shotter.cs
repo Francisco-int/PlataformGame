@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
 
 public class Shotter : MonoBehaviour
 {
-    
+
     public GameObject bala;
     public float shotCoolDown;
-    public Transform shotPoint;
+    public Vector3 shotPoint;
     bool shot;
     public float balaForce;
     public float activated;
@@ -17,8 +17,8 @@ public class Shotter : MonoBehaviour
     void Start()
     {
         shot = false;
-        shotCoolDown = Random.Range(0, 2);
-        InvokeRepeating("Shot", shotCoolDown, shotCoolDown);
+        
+        InvokeRepeating("Shot", 0, shotCoolDown);
     }
 
     void Update()
@@ -34,27 +34,30 @@ public class Shotter : MonoBehaviour
         {
             shot = false;
         }
-      
+
         if (player.position.x < -32.58)
         {
             shot = false;
         }
-        if (shot)
-        {
-            for (int i = 0; i < Random.Range(5, 15); i++)
-            {
-                float time = Time.deltaTime;
-                if (time > Random.Range(0, 2))
-                {
-                    shotPoint.position = new Vector3(Random.Range(-32.58f, -7.5f), 3.1f, Random.Range(-5.6f, 8.8f));
-                    Instantiate(bala, shotPoint);
-                    time = 0;
-                }
-            }
-        }
+
+
     }
+
     void Shot()
     {
-        
+        if (shot)
+        {
+
+            for (int i = 0; i < Random.Range(60, 70); i++)
+            {
+
+                shotPoint = new Vector3(Random.Range(-55.2f, 23.02f), 11f, Random.Range(-7.05f, 8.8f));
+                Instantiate(bala, shotPoint, bala.transform.rotation);
+
+            }
+            Debug.Log(shotCoolDown);
+        }
+
     }
 }
+

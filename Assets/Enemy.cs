@@ -9,12 +9,13 @@ public class Enemy : MonoBehaviour
     public float speed;
     bool afterPlayer;
     public float activated;
-
+//
     // Start is called before the first frame update
     void Start()
     {
         afterPlayer = false;
         player = GameObject.Find("Player").GetComponent<Transform>();
+
     }
 
     // Update is called once per frame

@@ -5337,7 +5337,7 @@ Transform:
   m_GameObject: {fileID: 493365771}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.54, z: -4.55}
+  m_LocalPosition: {x: 18.6, y: 0.54, z: -4.5}
   m_LocalScale: {x: 1.0913, y: 15.868379, z: 15.490734}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5608,8 +5608,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Primera prueba, este item te permitira ir mas veloz. Choca contra el para
-    comenzar la prueba.
+  m_Text: Primera prueba, este item te permitira ir mas veloz mas de lo que puedes
+    esperar. Choca contra el para comenzar la prueba.
 --- !u!222 &586857905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5894,7 +5894,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812877396}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -5911,7 +5911,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &812877399
 BoxCollider:
@@ -6113,7 +6113,7 @@ Transform:
   m_GameObject: {fileID: 817404207}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.87, y: 0, z: -0.58}
+  m_LocalPosition: {x: -2.1, y: 0, z: -0.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6152,7 +6152,7 @@ Transform:
   m_GameObject: {fileID: 847489808}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.8, y: 0, z: 2.1}
+  m_LocalPosition: {x: -7.8, y: 2.65, z: 2.1}
   m_LocalScale: {x: 2.21, y: 1, z: 0.27}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6269,10 +6269,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bala: {fileID: 8934840271347352806, guid: 9a9d2d436afce664292e31e186b84335, type: 3}
-  shotCoolDown: 0
-  shotPoint: {fileID: 0}
+  shotCoolDown: 0.2
+  shotPoint: {x: 0, y: 0, z: 0}
   balaForce: 40
-  activated: -6.7
+  activated: 23.02
   player: {fileID: 1658362515}
 --- !u!114 &847489817
 MonoBehaviour:
@@ -6314,7 +6314,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853266287}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.66999996}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6323,7 +6323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 31.21, y: 1.1100006}
+  m_AnchoredPosition: {x: 31.1, y: 1.1100006}
   m_SizeDelta: {x: 4.9244, y: 2.8937}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853266289
@@ -6477,7 +6477,7 @@ Transform:
   m_GameObject: {fileID: 897765828}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 29.09, y: 8.04, z: 0.87}
+  m_LocalPosition: {x: 47.690002, y: 8.04, z: 0.9200002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11678,7 +11678,7 @@ Transform:
   m_GameObject: {fileID: 1310478071}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.867, y: 0, z: -4.98}
+  m_LocalPosition: {x: 37.467003, y: 0, z: -4.93}
   m_LocalScale: {x: 25.9935, y: 1, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11881,7 +11881,7 @@ Transform:
   m_GameObject: {fileID: 1365259961}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.6, y: 0, z: 0.05000019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12309,7 +12309,7 @@ Transform:
   m_GameObject: {fileID: 1658362510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.4, y: 6.19, z: -5.2}
+  m_LocalPosition: {x: 66.9, y: 6.19, z: -5.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12357,7 +12357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPowerUp: 0
   player: {fileID: 1658362511}
-  pushForce: 100
+  pushForce: 1000
   speedPower: 0
   escalaTiempo: 0.1
   jugador: {fileID: 1658362510}
@@ -12408,7 +12408,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669369454}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -12425,7 +12425,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &1669369457
 BoxCollider:
@@ -17524,7 +17524,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899643814}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -17541,7 +17541,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &1899643817
 BoxCollider:
@@ -17744,7 +17744,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000673180}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -17761,7 +17761,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &2000673186
 MonoBehaviour:
@@ -17877,8 +17877,8 @@ Transform:
   m_GameObject: {fileID: 2002261338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45.4298, y: 0, z: -4.98}
-  m_LocalScale: {x: 79.332405, y: 1, z: 15}
+  m_LocalPosition: {x: -35.8157, y: 0, z: -4.98}
+  m_LocalScale: {x: 98.562584, y: 1, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1242733191}

@@ -51,7 +51,7 @@ public class PowerUps : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && currentPowerUp == PowerUpType.Push)
+        if (collision.gameObject.CompareTag("Enemy") && currentPowerUp == PowerUpType.Push && Input.GetKey(KeyCode.E))
         {
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
             Vector3 pushAway = (collision.gameObject.transform.position - transform.position);
