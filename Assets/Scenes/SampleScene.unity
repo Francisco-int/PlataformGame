@@ -320,7 +320,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139144543}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 7e-15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.03190435, y: 0.030722069, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -328,8 +328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.29, y: 1.17}
-  m_SizeDelta: {x: 156.6992, y: 211.093}
+  m_AnchoredPosition: {x: -0.08, y: 1.37}
+  m_SizeDelta: {x: 195.5055, y: 211.093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139144545
 MonoBehaviour:
@@ -364,8 +364,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Primera prueba, este item te permitira saltar mas de lo normal. Choca contra
-    el para comenzar la prueba.
+  m_Text: Primera prueba, este item te permitira saltar mas de lo normal, intenta
+    saltar el muro del frente. Choca contra la SuperTouch para comenzar la prueba.
 --- !u!222 &139144546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5564,7 +5564,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586857902}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -31.210003}
+  m_LocalPosition: {x: 0, y: 0, z: -31.21}
   m_LocalScale: {x: 0.03190435, y: 0.030722069, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5572,8 +5572,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6699962, y: 1.1700006}
-  m_SizeDelta: {x: 156.6992, y: 211.093}
+  m_AnchoredPosition: {x: -0.63, y: 1.47}
+  m_SizeDelta: {x: 258.7802, y: 211.093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586857904
 MonoBehaviour:
@@ -5608,8 +5608,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Primera prueba, este item te permitira ir mas veloz mas de lo que puedes
-    esperar. Choca contra el para comenzar la prueba.
+  m_Text: Segunda prueba, este item te permitira ir mas veloz, mas de lo que puedes
+    esperar, cuando avances empezaran a caer objetos ejecuta E para activar la velocidad
+    y pasar la prueba. Choca contra la SuperTouch para comenzar la prueba.
 --- !u!222 &586857905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6074,7 +6075,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8c289882986b17341b9d54bebe7ce243, type: 2}
+  - {fileID: 2100000, guid: 81256b2e6ccab7b4ba391c33dcad324b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11718,8 +11719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.84, y: 1.2}
-  m_SizeDelta: {x: 212.6554, y: 211.093}
+  m_AnchoredPosition: {x: 6.91, y: 1.66}
+  m_SizeDelta: {x: 270.108, y: 211.093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359758899
 MonoBehaviour:
@@ -11996,7 +11997,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Felicidad programa, lograste pasar las pruebas y nos has ayudado a ver
     las capacidades de las SuperTouchs. Lo lamentamos pero por ahora te apagaremos
-    a tener que usar otra vez. Hasta luego.
+    a tener que usarte otra vez. Hasta luego.
 --- !u!222 &1506605712
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12178,8 +12179,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cada vez que falles una de las pruebas iniciaras desde el principio por
-    lo que procura no fallar. Por favor, inicia con la primera prueba.
+  m_Text: Ten en cuenta que si sales de la plataforma blanca se reiniciara la prueba.
+    Cada vez que falles auna de las pruebas iniciaras desde el principio por lo que
+    procura no fallar. Por favor, inicia con la primera prueba.
 --- !u!222 &1657211385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17909,7 +17911,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113875080}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -75.72001}
+  m_LocalPosition: {x: 0, y: 0, z: -75.72}
   m_LocalScale: {x: 0.03190435, y: 0.030722069, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17917,8 +17919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.1499923, y: 1.1700006}
-  m_SizeDelta: {x: 156.6992, y: 211.093}
+  m_AnchoredPosition: {x: -0.27, y: 1.15}
+  m_SizeDelta: {x: 260.8576, y: 211.093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113875082
 MonoBehaviour:
@@ -17953,8 +17955,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Primera prueba, este item te permitira defenderte de todo aquel quien te
-    toque, eviandolos lejos. Choca contra el para comenzar la prueba.
+  m_Text: Tercera prueba, este item te permitira defenderte de todo aquel quien te
+    toque, eviandolos lejos, los cubos rojos te empujaran fuera de la plataforma
+    ejecuta E para activar la SuperTouch. Choca contra la SuperTouch para comenzar
+    la prueba.
 --- !u!222 &2113875083
 CanvasRenderer:
   m_ObjectHideFlags: 0
